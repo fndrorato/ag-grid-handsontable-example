@@ -4,7 +4,7 @@ import RichGridDeclarativeExample from "./richGridDeclarativeExample/RichGridDec
 import HandsOnTableComparison from "./handsonTable/htComponent";
 
 const TabComponent = () => {
-  const [tabIndex, setTabIndex] = useState(0);
+  const [tabIndex, setTabIndex] = useState(1);
 
   return (
     <Container>
