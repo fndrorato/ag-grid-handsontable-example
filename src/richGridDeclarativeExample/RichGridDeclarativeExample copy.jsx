@@ -93,190 +93,68 @@ export default class RichGridDeclarativeExample extends Component {
                     pinned: true
                 },
                 {
-                    headerName: "Cliente",
-                    field: "client",
-                    width: 170,
-                    enableRowGroup: true,
-                    enablePivot: true,
-                    pinned: true,
-                    editable: true                    
-                },  
-                {
-                    headerName: "ERP",
-                    field: "erp",
-                    width: 180,
-                    editable: true                    
-                },      
-                {
-                    headerName: "Analista",
-                    field: "analista", 
-                    width: 175,
-                    enableRowGroup: true,
-                    enablePivot: true,
-                    pinned: true,
-                    editable: true                      
-                },  
-                {
-                    headerName: "Lojas",
-                    field: "lojas",
-                    width: 80,
-                    enableRowGroup: true,
-                    enablePivot: true,
-                    sortable: false
-                },
-                {
-                    headerName: "Cadastrados",
-                    field: "cadastrados",
-                    width: 80,
-                    sortable: false
-                },
-                {
-                    headerName: "Novos",
-                    field: "novos",
-                    width: 80,
-                    sortable: false
-                },
-                {
-                    headerName: "Nomes Diferentes",
-                    field: "nomesDiferentes",
-                    width: 80,
-                    sortable: false
-                },
-                {
-                    headerName: "Com Divergence",
-                    field: "comDivergence",
-                    width: 80,
-                    enableRowGroup: true,
-                    enablePivot: true,
-                    sortable: false
-                },   
-                {
-                    headerName: "Pendentes",
-                    field: "pendentes",
-                    width: 80,
-                    enableRowGroup: true,
-                    enablePivot: true,
-                    sortable: false
-                },   
-                {
-                    headerName: "Aguardando Sinc",
-                    field: "aguardandoSinc",
-                    width: 80,
-                    enableRowGroup: true,
-                    enablePivot: true,
-                    sortable: false
-                }, 
-                {
-                    headerName: "Ação",
-                    field: "acao",
-                    width: 80,
-                    enableRowGroup: true,
-                    enablePivot: true,
-                    sortable: false
-                },                                                                    
-                // {
-                //     headerName: "Employee",
-                //     headerGroupComponent: HeaderGroupComponent,
-                //     children: [
-                //         {
-                //             field: "name",
-                //             width: 170,
-                //             cellEditor: NameCellEditor,
-                //             enableRowGroup: true,
-                //             enablePivot: true,
-                //             pinned: true,
-                //             editable: true
+                    headerName: "Employee",
+                    headerGroupComponent: HeaderGroupComponent,
+                    children: [
+                        {
+                            field: "name",
+                            width: 170,
+                            cellEditor: NameCellEditor,
+                            enableRowGroup: true,
+                            enablePivot: true,
+                            pinned: true,
+                            editable: true
 
-                //         },
-                //         {
-                //             field: "country",
-                //             width: 180,
-                //             cellRenderer: RichGridDeclarativeExample.countryCellRenderer,
-                //             filterParams: {
-                //                 cellRenderer: RichGridDeclarativeExample.countryCellRenderer,
-                //                 cellHeight: 20
-                //             },
-                //             enableRowGroup: true, 
-                //             enablePivot: true, 
-                //             pinned: true, 
-                //             editable: true
-                //         },
+                        },
+                        {
+                            field: "country",
+                            width: 180,
+                            cellRenderer: RichGridDeclarativeExample.countryCellRenderer,
+                            filterParams: {
+                                cellRenderer: RichGridDeclarativeExample.countryCellRenderer,
+                                cellHeight: 20
+                            },
+                            enableRowGroup: true, enablePivot: true, pinned: true, editable: true
+                        },
 
-                //         {
-                //             headerName: "DOB",
-                //             field: "dob", width: 175,
-                //             filter: "agDateColumnFilter",
-                //             pinned: true, columnGroupShow: "open",
-                //             cellRenderer: RichGridDeclarativeExample.dateCellRenderer
-                //         }
-                //     ]
-                // },
-                // {
-                //     headerName: "Skills",
-                //     field: "skills",
-                //     width: 120,
-                //     enableRowGroup: true,
-                //     enablePivot: true,
-                //     sortable: false,
-                //     cellRenderer: SkillsCellRenderer,
-                //     filter: SkillsFilter
-                // },
-                // {
-                //     headerName: "Level",
-                //     field: "proficiency",
-                //     width: 210,
-                //     enableValue: true,
-                //     cellRenderer: ProficiencyCellRenderer,
-                //     filter: ProficiencyFilter
-                // },                
-                // {
-                //     headerName: "IT Skills",
-                //     children: [
-                //         {
-                //             field: "skills",
-                //             width: 120,
-                //             enableRowGroup: true,
-                //             enablePivot: true,
-                //             sortable: false,
-                //             cellRenderer: SkillsCellRenderer,
-                //             filter: SkillsFilter
-                //         },
-                //         {
-                //             field: "proficiency",
-                //             width: 210,
-                //             enableValue: true,
-                //             cellRenderer: ProficiencyCellRenderer,
-                //             filter: ProficiencyFilter
-                //         }
-                //     ]
-                // },
-                // {
-                //     headerName: "Mobile", 
-                //     field: "mobile", 
-                //     width: 180, 
-                //     filter: "text"
-                // },
-                // {   
-                //     headerName: "LandLine",
-                //     field: "landline", 
-                //     width: 190, 
-                //     filter: "text"
-                // },
-                // {   
-                //     headerName: "Address",
-                //     field: "address", 
-                //     width: 500, 
-                //     filter: "text",
-                //     editable: true
-                // },
-                // {
-                //     headerName: "Contact",
-                //     children: [
-                //         {field: "mobile", width: 180, filter: "text"},
-                //         {field: "landline", width: 190, filter: "text"},
-                //         {field: "address", width: 500, filter: "text"}
-                //     ]
-                // }
+                        {
+                            headerName: "DOB",
+                            field: "dob", width: 175,
+                            filter: "agDateColumnFilter",
+                            pinned: true, columnGroupShow: "open",
+                            cellRenderer: RichGridDeclarativeExample.dateCellRenderer
+                        }
+                    ]
+                },
+                {
+                    headerName: "IT Skills",
+                    children: [
+                        {
+                            field: "skills",
+                            width: 120,
+                            enableRowGroup: true,
+                            enablePivot: true,
+                            sortable: false,
+                            cellRenderer: SkillsCellRenderer,
+                            filter: SkillsFilter
+                        },
+                        {
+                            field: "proficiency",
+                            width: 210,
+                            enableValue: true,
+                            cellRenderer: ProficiencyCellRenderer,
+                            filter: ProficiencyFilter
+                        }
+                    ]
+                },
+                {
+                    headerName: "Contact",
+                    children: [
+                        {field: "mobile", width: 180, filter: "text"},
+                        {field: "landline", width: 190, filter: "text"},
+                        {field: "address", width: 500, filter: "text"}
+                    ]
+                }
             ]
         };
     }
@@ -365,33 +243,55 @@ export default class RichGridDeclarativeExample extends Component {
     render() {
         return (
             <div style={{width: '100%'}}>
+                <div style={{display: "inline-block", width: "100%"}}>
+                    <div style={{float: "left"}}>
+                        <b>Employees Skills and Contact Details: </b>{this.state.rowCount}
+                    </div>
+                </div>
                 <div style={{marginTop: 10}}>
                     <div>
                         <span>
-                            Seleção:
+                            Grid API:
                             <button onClick={() => {
                                 this.api.selectAll();
-                            }} className="btn btn-primary">Selecionar Tudo</button>
+                            }} className="btn btn-primary">Select All</button>
                             <button onClick={() => {
                                 this.api.deselectAll();
-                            }} className="btn btn-primary">Limpar Seleção</button>
+                            }} className="btn btn-primary">Clear Selection</button>
+                        </span>
+                        <span style={{float: "right"}}>
+                            Column API:
+                            <button onClick={() => {
+                                this.api.setColumnsVisible(['country'], false);
+                            }} className="btn btn-primary">Hide Country Column</button>
+                            <button onClick={() => {
+                                this.api.setColumnsVisible(['country'], true);
+                            }} className="btn btn-primary">Show Country Column</button>
                         </span>
                     </div>
                     <div style={{display: "inline-block", width: "100%", marginTop: 10, marginBottom: 10}}>
                         <div style={{float: "left"}}>
-                            <button onClick={this.onRefreshData} className="btn btn-primary">Recarregar Dados</button>
+                            <button onClick={this.onRefreshData} className="btn btn-primary">Refresh Data</button>
+                        </div>
+                        <div style={{float: "right"}}>
+                            Filter API:
+                            <button onClick={this.invokeSkillsFilterMethod}
+                                    className="btn btn-primary">Invoke Skills Filter Method
+                            </button>
+                            <button onClick={this.dobFilter} className="btn btn-primary">DOB equals to 01/01/2000
+                            </button>
                         </div>
                     </div>
                     <div style={{display: "inline-block", width: "100%", marginTop: 10, marginBottom: 10}}>
                         <div style={{float: "left"}}>
-                            <label htmlFor="sideBarToggle">Mostrar Barra Lateral&nbsp;</label>
+                            <label htmlFor="sideBarToggle">Show Side Bar&nbsp;</label>
                             <input type="checkbox" id="sideBarToggle" onChange={this.onToggleSidebar}
                                    style={{marginRight: 5}}/>
                         </div>
                         <div style={{float: "right", marginLeft: 20}}>
-                            <label htmlFor="quickFilter">Filtro Rápido:&nbsp;</label>
+                            <label htmlFor="quickFilter">Quick Filter:&nbsp;</label>
                             <input type="text" id="quickFilter" onChange={this.onQuickFilterText}
-                                   placeholder="Digite algo..."/>
+                                   placeholder="Type text to filter..."/>
                         </div>
                     </div>
                     <div style={{height: 650, width: '100%'}} className="ag-theme-alpine">
