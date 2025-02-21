@@ -125,7 +125,7 @@ export default class RichGridDeclarativeExample extends Component {
                     sortable: false
                 },
                 {
-                    headerName: "Cadastrados",
+                    headerName: "Na Base",
                     field: "cadastrados",
                     width: 80,
                     sortable: false
@@ -137,13 +137,13 @@ export default class RichGridDeclarativeExample extends Component {
                     sortable: false
                 },
                 {
-                    headerName: "Nomes Diferentes",
+                    headerName: "N. Dif.",
                     field: "nomesDiferentes",
                     width: 80,
                     sortable: false
                 },
                 {
-                    headerName: "Com Divergence",
+                    headerName: "Com Diver",
                     field: "comDivergence",
                     width: 80,
                     enableRowGroup: true,
@@ -151,7 +151,7 @@ export default class RichGridDeclarativeExample extends Component {
                     sortable: false
                 },   
                 {
-                    headerName: "Pendentes",
+                    headerName: "Pend",
                     field: "pendentes",
                     width: 80,
                     enableRowGroup: true,
@@ -159,7 +159,7 @@ export default class RichGridDeclarativeExample extends Component {
                     sortable: false
                 },   
                 {
-                    headerName: "Aguardando Sinc",
+                    headerName: "Sinc",
                     field: "aguardandoSinc",
                     width: 80,
                     enableRowGroup: true,
